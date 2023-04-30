@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<math.h>
+
+int main(){
+
+    int num1,num2,num3;
+
+    printf("\n Digite un numero: ");
+    scanf("%i",&num1);
+
+    printf("\n  Selecione una de las siguientes opciones: \n    1. Cubo de el numero. \n    2. Saber si es par o impar. \n    3. Salir del programa. ");
+    printf ("\n\n Su seleccion es: ");
+    scanf("%d",&num2);
+
+    switch(num2){
+        case 1:num3 = pow(num1,3); printf("\n Su elevado al cubo es: %i.\n\n",num3);break;
+        case 2: if(num1%2==0){
+            printf("\n El numero %i es par.\n\n",num1);
+            }else{
+                printf("\n El numero %i es impar.\n\n",num1);}break;
+        case 3: printf("\n Hasta luego.\n\n");break;
+        default:printf("\n No selecciono ninguna opcion valida.\n\n");}
+
+    return 0;
+
+}
